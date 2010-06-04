@@ -5,7 +5,7 @@
 
 ## What?
 
-TweetMVC is a PHP MVC framwork where each component (class, function, or statement) fits inside of a Tweet (140 characters). Why? I don't 
+TweetMVC is a PHP MVC framework where each component (class, function, or statement) fits inside of a Tweet (140 characters). Why? I don't 
 know&hellip; but doesn't it sound fun? I guess the point was to code an extensible, fully-functional MVC framework from scratch in a kind of 
 code-golf-esque kind of way.
 
