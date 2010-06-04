@@ -13,8 +13,8 @@ code-golf-esque kind of way.
 
 The idea originally came from [Fabien Potencier](http://fabien.potencier.org) and his [Twitto](http://twitto.org) framework. This was 
 followed by [Phil Sturgeon](http://philsturgeon.co.uk) and his 
-[Twiny](http://philsturgeon.co.uk/news/2009/12/Twiny-Framework-the-framework-small-enough-to-tweet) framework. Both are fun and awesome
-little PHP scripts, but I wanted to create a fully-functional MVC framework. Therefore, I made TweetMVC.
+[Twiny](http://philsturgeon.co.uk/news/2009/12/Twiny-Framework-the-framework-small-enough-to-tweet) framework. Both are awesome,
+little PHP scripts, but I wanted to create a tiny, fully-functional MVC framework. Therefore, I made TweetMVC.
 
 ## Rules:
 
@@ -40,7 +40,12 @@ was creating TweetMVC to govern how the framework was written.
 
 TweetMVC requires PHP 5.3 so that it can take advantage of newer PHP features that might allow for shorter code (shortcut ternaries, 
 namespaces, lambdas/closures, etc.) TweetMVC also uses the MySQLi PHP extension for database support and the mod_rewrite Apache extension.
-You should configure your PHP to allow short_tags as well.
+You should configure your PHP installation to allow short_tags as well.
+
+## How to Install:
+
+This repository is a submodule to [tweetmvc-app](http://github.com/tweetmvc/tweetmvc-app). You should clone that repository to begin
+writing an app with TweetMVC. There is a README in that repository that covers the details about how to use TweetMVC.
 
 ## In the Works:
 
