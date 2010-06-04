@@ -9,12 +9,18 @@ TweetMVC is a PHP MVC framwork where each component (class, function, or stateme
 know&hellip; but doesn't it sound fun? I guess the point was to code an extensible, fully-functional MVC framework from scratch in a kind of 
 code-golf-esque kind of way.
 
+TweetMVC borrows on concepts of other PHP MVC frameworks, but everything is really small, barebones, and naturally obfuscated. I personally 
+use the [Kohana PHP Framework](http://kohanaframework.org) at work and for my own projects, and I suspect that some of my inspiration and 
+knowledge of framework internals used to create TweetMVC has come from working with Kohana.
+
 ## Why?
 
 The idea originally came from [Fabien Potencier](http://fabien.potencier.org) and his [Twitto](http://twitto.org) framework. This was 
 followed by [Phil Sturgeon](http://philsturgeon.co.uk) and his 
 [Twiny](http://philsturgeon.co.uk/news/2009/12/Twiny-Framework-the-framework-small-enough-to-tweet) framework. Both are awesome,
 little PHP scripts, but I wanted to create a tiny, fully-functional MVC framework. Therefore, I made TweetMVC.
+
+Will TweetMVC ever be used for a production environment? It probably isn't the best idea to do so, but I'm sure going to try some experiments.
 
 ## Rules:
 
