@@ -55,6 +55,9 @@ writing an app with TweetMVC. There is a README in that repository that covers t
 
 ## In the Works:
 
-- Session/Cookie Extension
 - Validation Extension
-- Improved Security
+- Testing
+
+## Disclaimer
+
+TweetMVC is under heavy development and has not been thoroughly tested. There are probably broken things inside.
