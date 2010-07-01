@@ -30,16 +30,16 @@ was creating TweetMVC to govern how the framework was written.
 - Write the code in such a way that it is as short as possible, but still produces a nice API
 - Each component (class, function, or statement) must be no longer than 140 characters (the size of a Tweet)
 - Fit as many components together as possible in one 140-character line
-- E_NOTICE errors are ignored, so the code can take advantage of PHP oddities that might normally cause errors
+- E_NOTICE and E_WARNING errors are ignored, so the code can take advantage of PHP oddities that might normally cause errors
 - The first line of every file should contain:
     - The PHP opening tag (short tags are acceptable and encouraged)
     - Any namespace or use statements (if applicable)
     - Any constants relative to the namespace
     - A comment explaining the purpose of the file
 - Comments should use the # symbol (it's the shortest) and any comments describing a line should begin at column 141
-- Working statements causing warnings can use the @ operator to prevent the warning from being displayed
 - Code does not need to be strictly PHP 5 or strictly object-oriented. Sometimes PHP 4 code can be shorter
 - Short tags, eval, variable variables&hellip; these are all allowed if it can shorten the code
+- The code should still try an be as secure as possible. Proper server configuration will be important.
 - These rules only apply to the framework code. Application code should be written cleanly and normally
 
 ## Requirements:
