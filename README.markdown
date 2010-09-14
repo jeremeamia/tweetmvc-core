@@ -56,8 +56,28 @@ writing an app with TweetMVC. There is a README in that repository that covers t
 ## In the Works:
 
 - Validation Extension
-- Testing
+- Unit Testing
 
-## Disclaimer
+## What's New in Version 2?
 
-TweetMVC is under heavy development and has not been thoroughly tested. There are probably broken things inside.
+- Removed manditory templating functionality from the controller.
+- Added `before()` and `after()` methods to controller which execute (you guessed it) before and after the action.
+- Added class pseudo-namespacing (e.g. "Model_{class-name}", "Controller_{class-name}").
+- Added an autoloader that supports the pseudo-namespacing and other application-level classes.
+- Removed the `load()` method from the core's model and added the `loaded()` method.
+- Altered the model's API, such that the usage will now be like: `$post = M::factory('post')->load(1);`.
+- Removed `call_user_func_array()` and `explode()` from request handling.
+- Added named parameters by passing the entire $_GET to the controller (Parameters accessed like: `$this->request->param('id')`).
+
+## Disclaimer(s):
+
+- TweetMVC is under heavy development and has not been thoroughly tested. There are probably broken things inside.
+- Experimental branch is untested, and probably does not work at all.
+
+## Some Todos:
+
+- The `db\s()` method in the database extension needs to be fixed. The API has changed based on the Model extension.
+- Rewrite the whole Database extension.
+  - General cleanup
+  - Pull out utility functions like `db\m()` and put somewhere else.
+  - Consider `array_map()` instead of `array_walk()` if better suited.
