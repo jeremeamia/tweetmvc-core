@@ -1,6 +1,6 @@
-<?const VERSION='v0.8.1';const EXT='.php';#TweetMVC Framework by Jeremy Lindblom - Framework core, setup, and request handler.
-error_reporting(341);function c($k){static$c;$c=$c?:include config.EXT;return$c[$k];}foreach(c(extensions)as$f)require c(x).$f.EXT;         #Setup
-class M{static function factory($c,$i=0){require_once c(m).$c.EXT;$m=new$c;return$m->load($c,$i);}function load($c,$i){return$this;}}       #Model
-class V{function V($f){$this->f=$f;}function __toString(){ob_start();extract((array)$this);require c(v).$f.EXT;return ob_get_clean();}}     #View
-class C{function C($m,$a){$this->template=new V(c(template));call_user_func_array(array($this,action_.$m),$a);echo$this->template;}}        #Controller
-list($c,$m,$a)=explode('/',$_GET[r],3);$c=$c?:c(controller);require c(c).$c.EXT;$o=new$c($m?:c(action),$a?explode('/',$a):array());         #Execute
+<?const VERSION='v2.0.0a';#TweetMVC Framework by Jeremy Lindblom - Framework core, setup, and request handler.
+error_reporting(341);function c($k){static$c;$c=$c?:include'config.php';return$c[$k];}$g=$_GET;$c=Controller_.($g[c]?:c(dc));$c=new$c($g);  #Setup & Configuration
+class M{function factory($c){$c=Model_.$c;return new$c;}function loaded(){return(bool)$this->id;}}foreach(c(extensions)as$f)require"$f.php";#Model & Extension Loader
+class V{function V($f){$this->_f=$f;}function __toString(){ob_start();extract((array)$this);require c(v)."$_f.php";return ob_get_clean();}} #View Class
+class C{function C($p){$this->_params=$p;}function before(){}function after(){}function param($k,$d=NULL){return$this->_params[$k]?:$d;}}   #Controller Class
+function __autoload($c){require_once c(app_path).strtolower(strtr($c,_,'/')).'.php';}$c->before();$c->{action_.($g[a]?:c(da))};$c->after(); #Autoloader & Execution
