@@ -62,12 +62,12 @@ writing an app with TweetMVC. There is a README in that repository that covers t
 
 - Removed manditory templating functionality from the controller.
 - Added `before()` and `after()` methods to controller which execute (you guessed it) before and after the action.
-- Added class pseudo-namespacing (e.g. "Model_{class-name}", "Controller_{class-name}").
+- Added class pseudo-namespacing (e.g. `Model_Post`, `Controller_Post`).
 - Added an autoloader that supports the pseudo-namespacing and other application-level classes.
 - Removed the `load()` method from the core's model and added the `loaded()` method.
 - Altered the model's API, such that the usage will now be like: `$post = M::factory('post')->load(1);`.
 - Removed `call_user_func_array()` and `explode()` from request handling.
-- Added named parameters by passing the entire $_GET to the controller (Parameters accessed like: `$this->request->param('id')`).
+- Added named parameters by passing the entire `$_GET` to the controller (Parameters accessed like: `$this->param('id')`).
 
 ## Disclaimer(s):
 
